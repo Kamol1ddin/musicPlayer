@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Music Player</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="Logo/ml.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="music_player">
+                <a href="index.html" id="title_player">Web Music Player</a>
+                <button class="menu"><i class="fas fa-bars"></i></button>
+                <audio id="music" src=""></audio>
+                <div class="music_img"></div>
+                <div class="music_controls">
+                        <div class="title_block"><h1 id="title"></h1></div>
+                        <div class="progress_container">
+                                <div class="progress"></div>
+                        </div>
+                        <div class="center_controls">
+                                <button id="backward"><i class="fas fa-backward"></i></button>
+                                <button id="play"><i class="fas fa-play"></i></button>
+                                <button id="forward"><i class="fas fa-forward"></i></button>
+                        </div>
+                        </div>
+        </div>
+        <div class="music_menu">
+                <ul class="music_list"></ul>
+        </div>
+
+
+
+        <script src="app.js"></script>
+</body>
+</html>
